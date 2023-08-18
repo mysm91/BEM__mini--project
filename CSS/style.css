@@ -86,10 +86,10 @@ body {
 .main {
     grid-area: Main;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "TopLeft TopRight"
-                         "BottomLeft BottomRight";
+    grid-template-areas: "TopLeft Middle TopRight"
+                         "BottomLeft Middle BottomRight";
 }
 
 .loader {
@@ -136,9 +136,55 @@ body {
     text-shadow: 0px 0px 3px white;
 }
 
-.main__3Dcard {
-    grid-area: TopRight;
-    background-color: crimson;
+.flip-card {
+    grid-area: Middle;
+    background-color: cadetblue;
+
+}
+
+.flip-card__container {
+    width: 250px;
+    height: 300px;
+    margin: 100px auto;
+    perspective: 1000px;
+}
+
+.flip-card__parent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 3s;
+    transform-style: preserve-3d;
+}
+
+.flip-card__card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-card__card--front {
+    background: url(../Images/Back-card.jpg) no-repeat center center / contain;
+}
+
+.flip-card__card--back {
+    background: url(../Images/Ace.png) no-repeat center center / contain;
+    transform: rotateY(180deg);
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+.flip-card__container:hover .flip-card__parent {
+    transform: rotateY(180deg);
 }
 
 .main__form {
