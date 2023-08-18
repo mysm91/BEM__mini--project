@@ -1,0 +1,117 @@
+/*****************CSS Reset*****************/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f8f9fa;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-areas: "Header"
+                         "Main"
+                         "Footer";
+}
+
+.header {
+    grid-area: Header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu__items {
+    list-style: none;
+}
+
+.main {
+    grid-area: Main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "TopLeft TopRight"
+                         "BottomLeft BottomRight";
+}
+
+.main__loader {
+    grid-area: TopLeft;
+    background-color: aqua;
+}
+
+.main__3Dcard {
+    grid-area: TopRight;
+    background-color: crimson;
+}
+
+.main__form {
+    grid-area: BottomLeft;
+    background-color: peru;
+}
+
+.main__darkmode {
+    grid-area: BottomRight;
+    background-color: royalblue;
+}
+
+
+footer {
+    grid-area: Footer;
+    background-color: greenyellow;
+}
+
+/* @media (min-width: 320px) and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 6fr 2fr 1fr;
+    grid-template-areas: "Header"
+                         "Left"
+                         "Main"
+                         "Right"
+                         "Footer";
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 6fr 1fr;
+    grid-template-areas: "Header Header"
+                         "Left Right"
+                         "Main Main"
+                         "Footer Footer";
+    }
+} */
