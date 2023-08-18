@@ -28,7 +28,7 @@ a {
     background-color: gray;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "Header"
                          "Main"
                          "Footer";
@@ -61,15 +61,54 @@ a {
 .main {
     grid-area: Main;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "TopLeft TopRight"
                          "BottomLeft BottomRight";
 }
 
-.main__loader {
+.loader {
     grid-area: TopLeft;
-    background-color: aqua;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loader__animation {
+    box-sizing: border-box;
+    width:160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top: 8px dotted white;
+    animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    cursor:progress;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.loader__text {
+    font-size: 1.5em;
+    color: transparent;
+    text-shadow: 0px 0px 3px white;
 }
 
 .main__3Dcard {
