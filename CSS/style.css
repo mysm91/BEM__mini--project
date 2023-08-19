@@ -204,7 +204,10 @@ body {
 }
 
 .form__container {
-    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -439,7 +442,9 @@ body {
     color: white;
 }
 
-@media (min-width: 320px) and (max-width: 501px) {
+/* Mobile and Tablet responsive design */
+
+@media (min-width: 320px) and (max-width: 768px) {
     .container {
         height: auto;
         grid-template-columns: 1fr;
@@ -466,6 +471,7 @@ body {
     .menu {
         grid-area: Menu;
         margin: 0  auto;
+        gap: 5px;
     }
 
     .main {
@@ -545,15 +551,9 @@ body {
     .footer__separator-line {
         display: none;
     }
-}
-/* 
-@media (min-width: 501px) and (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr 6fr 1fr;
-    grid-template-areas: "Header Header"
-                         "Left Right"
-                         "Main Main"
-                         "Footer Footer";
+
+    .footer__newsletter-input {
+        width: 250px;
     }
-} */
+}
+
