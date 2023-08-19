@@ -13,13 +13,11 @@
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
-    background-color: #f8f9fa;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background-color: gray;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -33,7 +31,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: powderblue;
+    background-color: rgb(51, 51, 51);
 }
 
 .logo {
@@ -65,11 +63,11 @@ body {
 
 .menu__links {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
     background-color: var(--primary-color);
     padding: 10px 15px;
-    border-radius: 10%;
+    border-radius: 7%;
     transition: 0.8s;
 }
 
@@ -79,8 +77,8 @@ body {
 
 .menu__links:hover {
     background-color: transparent;
-    color: red;
-    box-shadow: 0 0 6px 3px black;
+    color: var(--primary-color);
+    box-shadow: 0 0 6px 3px var(--primary-color);
 }
 
 .main {
@@ -279,9 +277,9 @@ body {
     text-align: center;
 }
 
-.spride-sheet {
+.article {
     grid-area: BottomRight;
-    background-color: green;
+    background-color: #34a853;
 }
 
 .footer {
