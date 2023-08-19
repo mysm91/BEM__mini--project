@@ -94,7 +94,7 @@ body {
 
 .loader {
     grid-area: TopLeft;
-    background-color: gray;
+    background-color: crimson;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +138,7 @@ body {
 
 .flip-card {
     grid-area: Middle;
-    background-color: goldenrod;
+    background-color: gold;
 
 }
 
@@ -268,17 +268,28 @@ body {
     cursor: pointer;
 }
 
+.video {
+    background-color: black;
+}
+
+.video__text {
+    color: var(--primary-color);
+    font-size: 17px;
+    padding: 20px 0;
+    text-align: center;
+}
 
 .main__darkmode {
     grid-area: BottomRight;
-    background-color: royalblue;
+    background-color: white;
 }
+
 
 
 
 footer {
     grid-area: Footer;
-    background-color: greenyellow;
+    background-color: royalblue;
 }
 
 /* @media (min-width: 320px) and (max-width: 500px) {
