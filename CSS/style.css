@@ -20,7 +20,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "Header"
                          "Main"
                          "Footer";
@@ -439,18 +439,114 @@ body {
     color: white;
 }
 
-/* @media (min-width: 320px) and (max-width: 500px) {
+@media (min-width: 320px) and (max-width: 501px) {
     .container {
+        height: auto;
         grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 6fr 2fr 1fr;
-    grid-template-areas: "Header"
-                         "Left"
-                         "Main"
-                         "Right"
-                         "Footer";
+        grid-template-rows: 0.5fr 10fr 1fr;
+        grid-template-areas: "Header"
+                             "Main"
+                             "Footer";
+    }
+
+    .header {
+        height: 120px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "Logo"
+                             "Menu"
+    }
+
+    .logo {
+        grid-area: Logo;
+        margin: 0 auto;
+    }
+
+    .menu {
+        grid-area: Menu;
+        margin: 0  auto;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.8fr 1fr 1fr 1.4fr;
+        grid-template-areas: "Loader"
+                             "Flip-card"
+                             "Form"
+                             "Video"
+                             "Article"
+    }
+
+    .loader {
+        grid-area: Loader;
+    }
+
+    .flip-card {
+        grid-area: Flip-card;
+    }
+
+    .form {
+        grid-area: Form;
+    }
+
+    .video {
+        grid-area: Video;
+    }
+
+    .article {
+        grid-area: Article;
+    }
+
+    .article__container {
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .article__image-link {
+        height: 40%;
+        width: 100%;
+    }
+
+    .article__image:hover {
+        scale: 1.5;
+    }
+
+    .article__content {
+        width: 100%;
+    }
+
+    .article__text {
+        padding-bottom: 25px;
+    }
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "Social-networks"
+                             "Newsletter"
+    }
+
+    .footer__socical-networks {
+        grid-area: Social-networks;
+        margin: 0 auto;
+    }
+
+    .footer__newsletter {
+        grid-area: Newsletter;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__separator-line {
+        display: none;
     }
 }
-
+/* 
 @media (min-width: 501px) and (max-width: 768px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
