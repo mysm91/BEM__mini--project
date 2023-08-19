@@ -22,7 +22,7 @@ body {
     background-color: gray;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-template-areas: "Header"
                          "Main"
                          "Footer";
@@ -273,23 +273,91 @@ body {
 }
 
 .video__text {
-    color: var(--primary-color);
+    color: white;
     font-size: 17px;
     padding: 20px 0;
     text-align: center;
 }
 
-.main__darkmode {
+.spride-sheet {
     grid-area: BottomRight;
-    background-color: white;
+    background-color: green;
 }
 
-
-
-
-footer {
+.footer {
     grid-area: Footer;
-    background-color: royalblue;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.footer__socical-networks {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 30px;
+}
+
+.footer__footer-text {
+    color: white;
+    font-size: 18px;
+}
+
+.footer__social-icons {
+    font-size: 22px;
+    color: white;
+    transition: 0.8s;
+}
+
+.footer__social-icons:hover {
+    color: var(--primary-color);
+}
+
+.footer__newsletter {
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 30px;
+}
+
+.footer__newsletter-input {
+    display: inline-block;
+    width: 300px;
+    padding: 0 0px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    height: 30px;
+}
+
+.footer__newsletter-input::placeholder {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.footer__newsletter-input:focus {
+    outline: none;
+}
+
+.footer__newsletter-button {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer__newsletter-button:hover {
+    background-color: #115ec2;
+    color: white;
 }
 
 /* @media (min-width: 320px) and (max-width: 500px) {
