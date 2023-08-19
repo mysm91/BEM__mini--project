@@ -181,7 +181,7 @@ body {
 }
 
 .flip-card__card--front {
-    background: url(../Images/Back-card.jpg) no-repeat center center / contain;
+    background: url(../Images/Back-card.png) no-repeat center center / contain;
 }
 
 .flip-card__card--back {
