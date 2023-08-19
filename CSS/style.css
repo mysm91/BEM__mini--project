@@ -22,7 +22,7 @@ body {
     background-color: gray;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 8fr 2fr;
+    grid-template-rows: 1fr 8fr 1fr;
     grid-template-areas: "Header"
                          "Main"
                          "Footer";
@@ -138,14 +138,14 @@ body {
 
 .flip-card {
     grid-area: Middle;
-    background-color: cadetblue;
+    background-color: goldenrod;
 
 }
 
 .flip-card__container {
-    width: 250px;
-    height: 300px;
-    margin: 100px auto;
+    width: 300px;
+    height: 350px;
+    margin: 90px auto;
     perspective: 1000px;
 }
 
@@ -187,15 +187,85 @@ body {
     transform: rotateY(180deg);
 }
 
-.main__form {
-    grid-area: BottomLeft;
-    background-color: peru;
+
+.form {
+    grid-area: TopRight;
+    background-color: rebeccapurple;
 }
+
+.form__container {
+    margin-left: 20%;
+
+}
+
+.form__title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 0.8rem 0;
+    color: white;
+}
+
+.form__items {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid var(--secondary-color);
+    color: var(--tertiary-color);
+    background-color: white;
+}
+
+.form__items:focus {
+    outline: none;
+}
+
+.form__items::placeholder {
+    color: var(--tertiary-color);
+}
+
+.form__items--text-input {
+    word-spacing: 2px;
+}
+
+.form__items--range {
+    width: 80%;
+}
+
+.form__range-output {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: white;
+}
+
+.form__range-output::before {
+    content: 'Year: ';
+}
+
+.form__button {
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.form__button:hover {
+    background-color: #115ec2;
+    cursor: pointer;
+}
+
 
 .main__darkmode {
     grid-area: BottomRight;
     background-color: royalblue;
 }
+
 
 
 footer {

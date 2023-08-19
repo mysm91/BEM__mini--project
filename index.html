@@ -49,9 +49,25 @@
                         <div class="flip-card__card flip-card__card--back"></div>
                     </div>
                 </div>
-                
-            </div>  
-            <div class="main__form">
+            </div>
+            <div class="form">
+                <div class="form__container">
+                    <h3 class="form__title">
+                        Search here:
+                    </h3>
+                    <input type="text" placeholder="What are you looking for?" class="form__items form__items--text-input">
+                    <select class="form__items form__items--select">
+                        <option value="" class="form__option" selected>REM</option>
+                        <option value="" class="form__option">RME</option>
+                        <option value="" class="form__option">MER</option>
+                        <option value="" class="form__option">MRE</option>
+                        <option value="" class="form__option">ERM</option>
+                        <option value="" class="form__option">EMR</option>
+                    </select>
+                    <input type="range" min="1991" max="2023" value="2020" oninput="this.nextElementSibling.value = this.value" name="" id="" class="form__items--range">
+                    <output class="form__range-output">2020</output>
+                    <input type="button" value="Search" class="form__items form__button">
+                </div>
             </div>
             <div class="main__darkmode">
             </div>
