@@ -94,7 +94,7 @@ body {
     grid-area: Main;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr;
     grid-template-areas: "TopLeft Middle TopRight"
                          "BottomLeft Middle BottomRight";
 }
