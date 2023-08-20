@@ -480,6 +480,10 @@ body {
         gap: 5px;
     }
 
+    .menu__links {
+    padding: 10px 10px;
+    }
+
     .main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1.8fr 1fr 1fr 1.4fr;
