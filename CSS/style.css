@@ -188,11 +188,11 @@ body {
     -webkit-backface-visibility: hidden;
 }
 
-.flip-card__card--front {
+.flip-card__card--background-image {
     background: url(../Images/Back-card.png) no-repeat center center / contain;
 }
 
-.flip-card__card--back {
+.flip-card__card--customize {
     background: url(../Images/Ace.png) no-repeat center center / contain;
     transform: rotateY(180deg);
     text-align: center;
@@ -244,11 +244,11 @@ body {
     color: var(--fifth-color);
 }
 
-.form__items--text-input {
+.form__items--input-type-text {
     word-spacing: 2px;
 }
 
-.form__items--range {
+.form__items--input-type-range {
     width: 80%;
 }
 
