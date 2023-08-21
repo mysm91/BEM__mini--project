@@ -227,13 +227,16 @@ body {
 .form__items {
     width: 80%;
     padding: 12px;
-    margin-bottom: 1rem;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 15px;
     font-weight: 400;
     border: 1px solid var(--secondary-color);
     color: var(--fifth-color);
     background-color: var(--tertiary-color);
+}
+
+.form__items--margin-bottom {
+    margin-bottom: 1rem;
 }
 
 .form__items:focus {
@@ -246,10 +249,6 @@ body {
 
 .form__items--input-type-text {
     word-spacing: 2px;
-}
-
-.form__items--input-type-range {
-    width: 80%;
 }
 
 .form__range-output {
@@ -265,10 +264,13 @@ body {
 }
 
 .form__button {
+    width: 80%;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid var(--secondary-color);
     padding: 10px 25px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    text-align: center;
     margin: 10px 0;
     border-radius: 5px;
     transition: 0.5s;
