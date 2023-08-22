@@ -94,7 +94,7 @@ body {
     grid-area: Main;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 1fr 0.9fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "TopLeft Middle TopRight"
                          "BottomLeft Middle BottomRight";
 }
@@ -225,7 +225,7 @@ body {
 }
 
 .form__items {
-    width: 80%;
+    width: 85%;
     padding: 12px;
     border-radius: 5px;
     font-size: 15px;
@@ -236,7 +236,7 @@ body {
 }
 
 .form__items--margin-bottom {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .form__items:focus {
@@ -247,8 +247,11 @@ body {
     color: var(--fifth-color);
 }
 
-.form__items--input-type-text {
-    word-spacing: 2px;
+.form__range {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .form__range-output {
@@ -264,7 +267,7 @@ body {
 }
 
 .form__button {
-    width: 80%;
+    width: 30%;
     font-size: 15px;
     font-weight: 400;
     border: 1px solid var(--secondary-color);
@@ -289,7 +292,8 @@ body {
 .video__text {
     color: var(--tertiary-color);
     font-size: 17px;
-    padding: 20px 0;
+    padding-top: 15px;
+    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -304,7 +308,7 @@ body {
 
 .article__container {
     display: flex;
-    height: 75%;
+    height: 80%;
     width: 90% ;
     background-color: rgba(119, 136, 153, 0.7);
 }
@@ -488,7 +492,7 @@ body {
 
     .main {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1.8fr 1fr 1fr 1.4fr;
+        grid-template-rows: 1fr 1.8fr 1fr 0.7fr 1.4fr;
         grid-template-areas: "Loader"
                              "Flip-card"
                              "Form"
@@ -506,6 +510,19 @@ body {
 
     .form {
         grid-area: Form;
+    }
+
+    
+    .form__items {
+        width: 70%;
+    }
+
+    .form__range {
+        width: 70%;
+    }
+
+    .form__button {
+        width: 30%;
     }
 
     .video {
@@ -574,7 +591,7 @@ body {
     .container {
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 10fr 1fr;
+        grid-template-rows: 0.5fr 8fr 1fr;
         grid-template-areas: "Header"
                              "Main"
                              "Footer";
@@ -582,7 +599,7 @@ body {
 
     .main {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.7fr 0.7fr 0.7fr 0.8fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "Loader Flip-card"
                              "Video Flip-card"
                              "Form Form"
@@ -599,6 +616,18 @@ body {
 
     .form {
         grid-area: Form;
+    }
+
+    .form__items {
+        width: 85%;
+    }
+
+    .form__range {
+        width: 85%;
+    }
+
+    .form__button {
+        width: 25%;
     }
 
     .video {
@@ -639,5 +668,3 @@ body {
         display: none;
     }
 }
-
-

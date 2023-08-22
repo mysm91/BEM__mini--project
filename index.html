@@ -76,9 +76,12 @@
                         <option value="" class="form__option">ERM</option>
                         <option value="" class="form__option">EMR</option>
                     </select>
-                    <input type="range" min="1991" max="2023" value="2020" oninput="this.nextElementSibling.value = this.value" name="" id="" class="form__items">
-                    <output class="form__range-output">2020</output>
+                    <div class="form__range">
+                        <input type="range" min="1991" max="2023" value="2020" oninput="this.nextElementSibling.value = this.value" name="" id="" class="form__items">
+                        <output class="form__range-output">2020</output>
+                    </div>
                     <input type="button" value="Search" class="form__button">
+
                 </div>
             </div>
             <!-- Video -->
@@ -86,8 +89,8 @@
                 <h3 class="video__text">
                     Follow Your Dreams, they know the way...
                 </h3>
-                <video controls loop height="200px" width="100%" class="video__player">
-                    <source src="./Video/1.mp4" type="video/mp4">
+                <video controls loop height="180px" width="100%" class="video__player">
+                    <source src="./Video/2.mp4" type="video/mp4">
                     Your browser does not support the video.
                 </video>
             </div>
