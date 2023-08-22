@@ -521,10 +521,6 @@ body {
         width: 70%;
     }
 
-    .form__button {
-        width: 30%;
-    }
-
     .video {
         grid-area: Video;
     }
@@ -616,14 +612,6 @@ body {
 
     .form {
         grid-area: Form;
-    }
-
-    .form__items {
-        width: 85%;
-    }
-
-    .form__range {
-        width: 85%;
     }
 
     .form__button {
